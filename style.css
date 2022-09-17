@@ -1,0 +1,113 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  font-size: 62.5%;
+}
+
+body{
+  font-family: 'Staatliches', cursive;
+  font-size: 1.6rem;
+  background: #ffff;
+}
+
+.page{
+  display: flex;
+  
+}
+
+
+header{
+
+width: 37.7rem;
+width: 19.7vw;
+height: 100vw;
+background: #8E9AAF;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 3.2rem;
+
+}
+
+section{
+  height: 100%;
+  display: grid;
+  gap: 3.2rem;
+  margin: auto;
+  margin-top: 6rem;
+  padding: 5rem;
+  grid-template-areas: 
+  'a b c'
+  'd b f '
+  'd e f' ;
+
+}
+
+section div:nth-child(1){
+  grid-area:a ;
+}
+section div:nth-child(2){
+  grid-area:b ;
+}
+section div:nth-child(3){
+  grid-area:c ;
+}
+section div:nth-child(4){
+  grid-area:d ;
+}
+section div:nth-child(5){
+  grid-area:e ;
+}
+section div:nth-child(6){
+  grid-area:f ;
+}
+
+h1{
+padding: 2rem ;
+background: #CBC0D3;
+width: 37.7rem;
+color: #fff;
+font-family: 'Staatliches';
+font-style: normal;
+font-weight: 400;
+font-size: clamp(1rem , 10+5vw ,6rem);
+line-height: 34px;
+width: 19.7vw;
+text-align: center;
+
+}
+
+header img{
+  margin-top: 3.2rem;
+}
+
+
+
+p{
+color: #fff;
+width: 27.5rem;
+font-family: 'Roboto', sans-serif;;
+font-style: normal;
+font-weight: 400;
+font-size: 21px;
+line-height: 20px;
+text-align: center;
+}
+
+
+
+.card{
+  
+  width: clamp(9rem, 30vw, 30rem);
+}
+
+footer{
+  padding-top: 30rem;
+  margin: auto;
+  grid-area: e;
+  text-align: center;
+}
